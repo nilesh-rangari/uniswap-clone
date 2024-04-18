@@ -8,7 +8,7 @@ function Content() {
     return(
         <main className="bg-[#191b1f] bg-cover h-full px-5">
             {/* first section */}
-            <div className="bg-[#191b1f] bg-cover h-screen w-screen mx-auto flex justify-center">
+            <div className="bg-[#191b1f] bg-cover h-screen w-full mx-auto flex justify-center mb-10">
                 <div className="relative bg-cover bg-center h-screen w-full" style={{ backgroundImage: `url(${bgStars})` }}>
                         <div className="absolute inset-0 flex flex-col justify-end items-start p-10">
                             <h1 className="text-white text-6xl mb-5">
@@ -50,7 +50,7 @@ function Content() {
             </div>
 
             {/* second section */}
-            <div className="w-screen bg-[#191b1f] bg-cover p-16">
+            <div className="w-full bg-[#191b1f] bg-cover p-16 mb-32">
 				<div className="flex justify-center">
 					<div className="flex w-2/3 justify-between items-center m-0 text-white">
 									<div className="flex flex-col items-center">
@@ -82,18 +82,17 @@ function Content() {
 			</div>
 
             {/* 3rd section */}
-            <div className="mb-16">
+            <div className="mb-16 ">
                 <div className="flex justify-between items-center">
-                    <div className="">
+                    <div className="w-full">
                         <a className="text-white text-[18px] font-normal " href="https://uniswap.org/ecosystem">UNISWAP ECOSYSTEM →</a>
                         <h1 className="max-w-[380px] text-white text-[32px] my-5">A growing network of DeFi Apps.</h1>
                         <p className="max-w-[390px] text-xl text-[#888D9B] font-light">
                             Developers, traders, and liquidity providers participate together in a financial marketplace that is open and accessible to all.
                         </p>
                     </div>
-                    <div className="relative max-w-xl mx-auto ">
+                    <div className="relative max-w-xl mx-auto mr-3">
                         <img className="w-full object-cover min-h-[290px] rounded-[24px] border border-[#ffffff30]" src={apps} alt="apps image"/>
-                        <div className="absolute inset-0 bg-[#191b1f] opacity-10"></div>
                         <div className="absolute inset-0 flex-col items-start justify-start p-6">
                             <h1 className="text-white text-5xl font-bold">300+</h1>
                             <p className="text-[#a3a3a3] text-xl">Integrations</p>
@@ -107,37 +106,39 @@ function Content() {
 
             {/* 4th section */}
 
-            <div>
+            <div className="mb-14">
                 <a href="https://uniswap.org/developers">
-                    <h1 className="mb-4 text-white text-[18px] font-normal">DEVELOPERS →</h1>
+                    <h1 className="my-4 text-white text-[18px] font-normal">DEVELOPERS →</h1>
                 </a>
-                <div className="flex gap-4">
-                    <div className="flex-col">
+                <div className="flex justify-between">
+                    <div className="flex-col w-auto mr-4">
                         <div className="relative w-full mx-auto">
                             <img className="w-full object-cover rounded-[24px] border border-[#ffffff30]" src={developerImage} alt="apps image"/>
-                            <div className="absolute inset-0 bg-[#191b1f] opacity-10"></div>
-                            <div className="absolute inset-0 flex-col items-start justify-start p-6">
-                                <h3 className="text-white text-5xl">Superpowers for DeFi developers.</h3>
-                                <p className="text-xl text-[#888D9B] font-light">Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK, and fully open source code.</p>
+                            {/* <div className="absolute inset-0 bg-[#191b1f] opacity-10"></div> */}
+                            <div className="absolute inset-0 flex-col items-start justify-end self-end p-8">
+                                <h3 className="text-white text-[32px] mb-4">Superpowers for DeFi developers.</h3>
+                                <p className="text-xl text-[#888D9B] font-light mb-4">Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK, and fully open source code.</p>
                                 <a target="_blank" href="https://docs.uniswap.org/">
-                                    <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px]">Documentation ↗</button>
+                                    <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px] text-[16px]">Documentation ↗</button>
                                 </a>
                             </div>
                         </div>
-                        <div className="flex justify-stretch">
-                            <div>
+                        <div className="flex mt-4 ">
+                            <div className="w-full">
                             <a target="_blank" href="https://uniswap.org/whitepaper-v3.pdf">
-                                <button className="text-[20px] px-[12px] py-[10px] text-white bg-[#FFFFFF05] rounded-[10px] p-6 border border-[#ffffff30]">V3 Whitepaper ↗</button>
+                                <button className=" text-[20px] text-white bg-[#FFFFFF05] rounded-[20px] p-6 border border-[#ffffff30]">
+                                    V3 Whitepaper ↗
+                                </button>
                             </a>
                             </div>
-                            <div>
+                            <div className="w-full">
                             <a target="_blank" href="https://github.com/Uniswap">
-                                <button className="text-[20px] px-[12px] py-[10px] text-white bg-[#FFFFFF05] rounded-[10px] p-6 border border-[#ffffff30]">Github ↗</button>
+                                <button className="text-[20px] text-white bg-[#FFFFFF05] rounded-[20px] p-6 border border-[#ffffff30]">Github ↗</button>
                             </a>
                             </div>
                         </div>
                     </div>
-                    <div className="bg-[#FFFFFF05] rounded-[24px] p-6 border border-[#ffffff30]">
+                    <div className="bg-[#FFFFFF05] rounded-[24px] p-6 border border-[#ffffff30] w-2/5">
                         <div className="flex-col items-start justify-start p-6 ">
                                 <img src={unigrants} alt="unigrants image" />
                                 <h3 className="text-white text-xl mt-4">Apply for funding from the Uniswap Grants Program</h3>
@@ -152,26 +153,31 @@ function Content() {
 
             {/* 5th section */}
 
-            <div>
+            <div className="mb-14">
                 <a href="https://uniswap.org/governance">
-                    <h1 className="mb-4 text-white text-[18px] font-normal">PROTOCOL GOVERNANCE →</h1>
+                    <h1 className="my-4 text-white text-[18px] font-normal">PROTOCOL GOVERNANCE →</h1>
                 </a>
-                <div className="flex">
-                    <div className="w-1/2">
-                        <div className="relative w-full mx-auto">
+                <div className="flex justify-between ">
+                    <div className="w-1/2 mr-12">
+                        <div className="relative w-full h-full mx-auto">
                                 <img className="w-full object-cover rounded-[24px] border border-[#ffffff30]" src={horseCard} alt="apps image"/>
-                                <div className="absolute inset-0 bg-[#191b1f] opacity-10"></div>
-                                <div className="absolute inset-0 flex-col items-start justify-start p-6">
-                                    <h3 className="text-white text-5xl">Governed by the community.</h3>
-                                    <p className="text-xl text-[#888D9B] font-light">The Uniswap Protocol is managed by a global community of UNI token holders and delegates.</p>
-                                    <a target="_blank" href="https://docs.uniswap.org/concepts/governance/guide-to-voting">
-                                        <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px]">Read More ↗</button>
-                                    </a>
+                                <div className="absolute inset-0 flex-col h-full justify-evenly p-6">
+                                    <div>
+                                        <h3 className="text-white text-[32px] mb-4">Governed by the community.</h3>
+                                        <p className="text-xl text-[#888D9B] font-light mb-4">
+                                            The Uniswap Protocol is managed by a global community of UNI token holders and delegates.
+                                        </p>
+                                    </div>
+                                    <div className="self-end">
+                                        <a target="_blank" href="https://docs.uniswap.org/concepts/governance/guide-to-voting">
+                                            <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px] text-[16px]">Read More ↗</button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                     </div>
-                    <div className="gap-4 w-1/2 flex-col">
-                        <div className="p-6 mb-3 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
+                    <div className="w-1/2 flex-col justify-evenly">
+                        <div className="p-6 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
                                 <a target="_blank" href="https://gov.uniswap.org/">
                                     <button>
                                         <h3 className="text-white text-xl text-start mb-3">Governance Forum ↗</h3>
@@ -179,7 +185,7 @@ function Content() {
                                     </button>
                                 </a>
                         </div>
-                        <div className="p-6 mb-3 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
+                        <div className="p-6 my-6 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
                                 <a target="_blank" href="https://sybil.org/#/delegates/uniswap">
                                     <button>
                                         <h3 className="text-white text-xl text-start mb-3">Sybil ↗</h3>
@@ -187,7 +193,7 @@ function Content() {
                                     </button>
                                 </a>
                         </div>
-                        <div className="p-6 mb-3 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
+                        <div className="p-6 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
                                 <a target="_blank" href="https://app.uniswap.org/vote">
                                     <button>
                                         <h3 className="text-white text-xl text-start mb-3">Governance Portal ↗</h3>

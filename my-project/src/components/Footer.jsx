@@ -1,21 +1,23 @@
 function Footer() {
     return(
-        <footer className="bg-[#191b1f] bg-cover">
+        <footer className="bg-[#191b1f] bg-cover flex justify-between items-cente p-8 mt-14"> 
             <div className="">
-                <div className="gap-4">
-                    <a href="/ecosystem" className="text-[#a3a3a3]">Ecosystem</a>
-                    <a href="/community" className="text-[#a3a3a3]">Community</a>
-                    <a href="/governance" className="text-[#a3a3a3]">Governance</a>
-                    <a href="/developers" className="text-[#a3a3a3]">Developers</a>
-                    <a href="https://blog.uniswap.org" className="text-[#a3a3a3]">Blog</a>
-                    <a href="/faq" className="text-[#a3a3a3]">FAQ</a>
-                    <a href="/privacy-policy" className="text-[#a3a3a3]">Privacy Policy</a>
-                    <a href="/trademark" className="text-[#a3a3a3]">Trademark Policy</a>
-                    <a href="/security" className="text-[#a3a3a3]">Security</a>
+            <div className="">
+                <div className="mb-6">
+                    <a href="/ecosystem" className="text-white text-sm mr-12">Ecosystem</a>
+                    <a href="/community" className="text-white text-sm mr-12">Community</a>
+                    <a href="/governance" className="text-white text-sm mr-12">Governance</a>
+                    <a href="/developers" className="text-white text-sm mr-12">Developers</a>
+                    <a href="https://blog.uniswap.org" className="text-white text-sm mr-12">Blog</a>
+                    <a href="/faq" className="text-white text-sm mr-12">FAQ</a>
+                    <a href="/privacy-policy" className="text-white text-sm mr-12">Privacy Policy</a>
+                    <a href="/trademark" className="text-white text-sm mr-12">Trademark Policy</a>
+                    <a href="/security" className="text-white text-sm mr-12">Security</a>
                 </div>
-                <div className="text-[#747474]">Media inquires for Uniswap Labs - Contact 
-                    <a target="_blank" rel="noopener noreferrer" href="mailto:media@uniswap.org" className="text-[#a3a3a3]">media@uniswap.org</a>
+                <div className="text-[#FFFFFF99] text-sm">Media inquires for Uniswap Labs - Contact:
+                    <a target="_blank" rel="noopener noreferrer" href="mailto:media@uniswap.org" className="text-white text-sm">media@uniswap.org</a>
                 </div>
+            </div>
             </div>
             <div className="flex gap-4">
                 <a href="https://discord.gg/FCfyBSbCU5" target="_blank" rel="noopener noreferrer">
