@@ -1,5 +1,7 @@
 import bgStars from "../assets/glimmer_bg.svg";
 import apps from "../assets/apps.png";
+import developerImage from '../assets/developer.png';
+import unigrants from '../assets/unigrants.png';
 
 function Content() {
     return(
@@ -79,24 +81,69 @@ function Content() {
 			</div>
 
             {/* 3rd section */}
-            <div className="">
+            <div className="mb-16">
                 <div className="flex justify-between items-center">
                     <div className="">
                         <a className="text-white text-[18px] font-normal " href="https://uniswap.org/ecosystem">UNISWAP ECOSYSTEM →</a>
                         <h1 className="max-w-[380px] text-white text-[32px] my-5">A growing network of DeFi Apps.</h1>
-                        <p className="max-w-[390px] text-[20px] text-[#888D9B] font-light">
+                        <p className="max-w-[390px] text-xl text-[#888D9B] font-light">
                             Developers, traders, and liquidity providers participate together in a financial marketplace that is open and accessible to all.
                         </p>
                     </div>
-                    <div className="relative max-w-xl mx-auto">
-                        <img className="h-64 w-full object-cover min-h-[290px] rounded-[30px] " src={apps} alt="apps image"/>
+                    <div className="relative max-w-xl mx-auto ">
+                        <img className="w-full object-cover min-h-[290px] rounded-[24px] border border-[#ffffff30]" src={apps} alt="apps image"/>
                         <div className="absolute inset-0 bg-[#191b1f] opacity-10"></div>
                         <div className="absolute inset-0 flex-col items-start justify-start p-6">
                             <h1 className="text-white text-5xl font-bold">300+</h1>
                             <p className="text-[#a3a3a3] text-xl">Integrations</p>
-                            <a href="/ecosystem">
+                            <a target="_blank" href="https://uniswap.org/ecosystem">
                                 <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px]">Explore all ↗</button>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* 4th section */}
+
+            <div>
+                <a href="https://uniswap.org/developers">
+                    <h1 className="mb-4 text-white text-[18px] font-normal">DEVELOPERS →</h1>
+                </a>
+                <div className="flex gap-4">
+                    <div className="flex-col">
+                        <div className="relative w-full mx-auto">
+                            <img className="w-full object-cover rounded-[24px] border border-[#ffffff30]" src={developerImage} alt="apps image"/>
+                            <div className="absolute inset-0 bg-[#191b1f] opacity-10"></div>
+                            <div className="absolute inset-0 flex-col items-start justify-start p-6">
+                                <h3 className="text-white text-5xl">Superpowers for DeFi developers.</h3>
+                                <p className="text-xl text-[#888D9B] font-light">Build Defi apps and tools on the largest crypto project on Ethereum. Get started with quick start guides, protocol documentation, a Javascript SDK, and fully open source code.</p>
+                                <a target="_blank" href="https://docs.uniswap.org/">
+                                    <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px]">Documentation ↗</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex justify-stretch">
+                            <div>
+                            <a target="_blank" href="https://uniswap.org/whitepaper-v3.pdf">
+                                <button className="text-[20px] px-[12px] py-[10px] text-white bg-[#FFFFFF05] rounded-[10px] p-6 border border-[#ffffff30]">V3 Whitepaper ↗</button>
+                            </a>
+                            </div>
+                            <div>
+                            <a target="_blank" href="https://github.com/Uniswap">
+                                <button className="text-[20px] px-[12px] py-[10px] text-white bg-[#FFFFFF05] rounded-[10px] p-6 border border-[#ffffff30]">Github ↗</button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="bg-[#FFFFFF05] rounded-[24px] p-6 border border-[#ffffff30]">
+                        <div className="flex-col items-start justify-start p-6 ">
+                                <img src={unigrants} alt="unigrants image" />
+                                <h3 className="text-white text-xl mt-4">Apply for funding from the Uniswap Grants Program</h3>
+                                <p className="text-xl text-[#FFFFFF99] font-light my-4">Get paid to build the future of finance. Uniswap Governance offers grant funding for people building apps, tools, and activities on the Uniswap Protocol.</p>
+                                <a target="_blank" href="https://www.uniswapfoundation.org/">
+                                    <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px]">Learn more ↗</button>
+                                </a>
                         </div>
                     </div>
                 </div>
