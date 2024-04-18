@@ -2,6 +2,7 @@ import bgStars from "../assets/glimmer_bg.svg";
 import apps from "../assets/apps.png";
 import developerImage from '../assets/developer.png';
 import unigrants from '../assets/unigrants.png';
+import horseCard from '../assets/horse-card.png';
 
 function Content() {
     return(
@@ -143,6 +144,55 @@ function Content() {
                                 <p className="text-xl text-[#FFFFFF99] font-light my-4">Get paid to build the future of finance. Uniswap Governance offers grant funding for people building apps, tools, and activities on the Uniswap Protocol.</p>
                                 <a target="_blank" href="https://www.uniswapfoundation.org/">
                                     <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px]">Learn more ↗</button>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* 5th section */}
+
+            <div>
+                <a href="https://uniswap.org/governance">
+                    <h1 className="mb-4 text-white text-[18px] font-normal">PROTOCOL GOVERNANCE →</h1>
+                </a>
+                <div className="flex">
+                    <div className="w-1/2">
+                        <div className="relative w-full mx-auto">
+                                <img className="w-full object-cover rounded-[24px] border border-[#ffffff30]" src={horseCard} alt="apps image"/>
+                                <div className="absolute inset-0 bg-[#191b1f] opacity-10"></div>
+                                <div className="absolute inset-0 flex-col items-start justify-start p-6">
+                                    <h3 className="text-white text-5xl">Governed by the community.</h3>
+                                    <p className="text-xl text-[#888D9B] font-light">The Uniswap Protocol is managed by a global community of UNI token holders and delegates.</p>
+                                    <a target="_blank" href="https://docs.uniswap.org/concepts/governance/guide-to-voting">
+                                        <button className="px-[12px] py-[10px] text-white bg-[#35373a] rounded-[10px]">Read More ↗</button>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    <div className="gap-4 w-1/2 flex-col">
+                        <div className="p-6 mb-3 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
+                                <a target="_blank" href="https://gov.uniswap.org/">
+                                    <button>
+                                        <h3 className="text-white text-xl text-start mb-3">Governance Forum ↗</h3>
+                                        <p className="text-[16px] text-[#FFFFFF99] font-light text-start">Participate by proposing upgrades and discussing the future of the protocol with the Uniswap community.</p>
+                                    </button>
+                                </a>
+                        </div>
+                        <div className="p-6 mb-3 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
+                                <a target="_blank" href="https://sybil.org/#/delegates/uniswap">
+                                    <button>
+                                        <h3 className="text-white text-xl text-start mb-3">Sybil ↗</h3>
+                                        <p className="text-[16px] text-[#FFFFFF99] font-light text-start">Vote on offchain proposals with the Snapshot interface. Votes are weighted by the number of UNI delegates.</p>
+                                    </button>
+                                </a>
+                        </div>
+                        <div className="p-6 mb-3 border border-[#ffffff30] bg-[#ffffff05] rounded-[20px]">
+                                <a target="_blank" href="https://app.uniswap.org/vote">
+                                    <button>
+                                        <h3 className="text-white text-xl text-start mb-3">Governance Portal ↗</h3>
+                                        <p className="text-[16px] text-[#FFFFFF99] font-light text-start">Vote on official Uniswap governance proposals and view past proposals.</p>
+                                    </button>
                                 </a>
                         </div>
                     </div>
